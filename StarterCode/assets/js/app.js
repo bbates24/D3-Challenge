@@ -91,12 +91,12 @@ chartGroup.call(toolTip);
 circlesGroup.on("click", function (data) {
     toolTip.show(data, this);
 
-    .on("mouseout", function (data, index) {
+      on("mouseout", function (data, index) {
         toolTip.hide(data);
       });
 
 // Create Axis Labels
-chartGroup.append("text")
+chartGroup.append("text") 
     .attr("transform", "rotate(-90)")
     .attr("y", 0 - margin.left + 40)
     .attr("x", 0 - (height / 2))
